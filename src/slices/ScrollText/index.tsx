@@ -3,7 +3,6 @@
 import { FC, useRef } from "react";
 import { asText, Content } from "@prismicio/client";
 import { SliceComponentProps } from "@prismicio/react";
-import { PrismicRichText } from "@prismicio/react";
 import { Bounded } from "@/components/Bounded";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/ScrollTrigger";

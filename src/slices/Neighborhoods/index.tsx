@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Content } from "@prismicio/client";
+import { Content, ImageField } from "@prismicio/client"; // 👈 ajoute ImageField
 import { SliceComponentProps } from "@prismicio/react";
 import { PrismicNextImage } from "@prismicio/next";
 import { PrismicRichText } from "@prismicio/react";
@@ -11,7 +11,7 @@ export type NeighborhoodsProps = SliceComponentProps<Content.NeighborhoodsSlice>
 const Neighborhoods: FC<NeighborhoodsProps> = ({ slice }) => {
   const items = slice.primary.popularneighborhoods as {
     titleneighborhoods?: string;
-    imgneighborhoods?: any;
+    imgneighborhoods?: ImageField; // 👈 ici on remplace any
   }[];
 
   return (
@@ -21,10 +21,9 @@ const Neighborhoods: FC<NeighborhoodsProps> = ({ slice }) => {
       className="bg-[#D3CCC1] text-[#141414]"
     >
       <FadeIn className="text-center font-display text-4xl sm:text-5xl md:text-6xl leading-[1.1] mb-16">
-        <PrismicRichText
-          field={slice.primary.titlefamousneighborhoods}
-          />
+        <PrismicRichText field={slice.primary.titlefamousneighborhoods} />
       </FadeIn>
+
       <div className="flex flex-wrap justify-center gap-8 mx-auto">
         {items.slice(0, 4).map((item, index) => (
           <FadeIn
