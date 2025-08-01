@@ -1,16 +1,21 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Raleway } from "next/font/google";
+import localFont from 'next/font/local'
 import "./globals.css";
+import { Footer } from "@/components/Footer";
+import { Navbar } from "@/components/NavBar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const raleway = Raleway({
+  variable: "--font-raleway",
   subsets: ["latin"],
+  display: "swap" // Afficher une police de secours en attendant le chargement 
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const gambarino = localFont({
+  variable: "--font-gambarino",
+  src: './gambarino.woff2',
+  display: "swap"
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,11 +28,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+    <html 
+      lang="en" 
+      className={`${raleway.variable} ${gambarino.variable} antialiased`}
+    >
+      <body className="bg bg-neutral-900 text-white">
+        <main className="pt-14 md:pt-16">
+          <Navbar />
+          {children}
+        </main>
+          <Footer />
       </body>
     </html>
   );

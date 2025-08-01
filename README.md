@@ -34,3 +34,34 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+## My approach and structure
+
+This is a real estate website for the 15th arrondissement of Paris.
+I built it using React, Next.js, TypeScript, Prismic, GSAP, and Tailwind CSS.
+
+I created 5 slices in Prismic:
+
+-Hero : The main section with a title, image, short description, and call-to-action button.
+-ScrollText : A GSAP animation that progressively displays a description of the 15th district.
+-AveragePrice : Shows average prices for apartments and houses using a table from Prismic.
+-Neighborhoods : A list of 4 well-known places, each with an image and a short description.
+-FAQ : An accordion-style FAQ section with expandable questions and answers.
+
+Components
+
+I also created a navbar and a footer.
+In the components folder, I added :
+
+Bounded: to control content width
+FadeIn & RevealText: for smooth GSAP animations
+Navbar & Footer: for layout structure
+
+I also add 2 fonts, 1 font in GoogleFont (Raleway) and 1 local who is Gambarino
+
+🔧 Tools & Learning
+
+To complete the project, I briefly watched a tutorial from Prismic’s official YouTube channel, used my knowledge of React, Tailwind, and GSAP, and got help from AI tools for debugging and text generation.
+
+ScreenShot of my project : (./public/screenshot.png)(./public/screenshot2.png)(./public/faq.png)

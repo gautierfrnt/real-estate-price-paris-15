@@ -1,0 +1,52 @@
+{
+  "id": "neighborhoods",
+  "type": "SharedSlice",
+  "name": "Neighborhoods",
+  "description": "Neighborhoods",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "titlefamousneighborhoods": {
+          "type": "StructuredText",
+          "config": {
+            "label": "TitleFamousneighborhoods",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading1"
+          }
+        },
+        "popularneighborhoods": {
+          "type": "Group",
+          "config": {
+            "label": "PopularNeighborhoods",
+            "repeat": true,
+            "fields": {
+              "titleneighborhoods": {
+                "type": "Text",
+                "config": {
+                  "label": "TitleNeighborhoods",
+                  "placeholder": ""
+                }
+              },
+              "imgneighborhoods": {
+                "type": "Image",
+                "config": {
+                  "label": "IMGNeighborhoods",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

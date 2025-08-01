@@ -1,0 +1,119 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"table": {
+				"__TYPE__": "TableContent",
+				"content": [
+					{
+						"key": "e836d58a-1449-4e7e-90d9-17f94a7fd9e9",
+						"type": "tableRow",
+						"content": [
+							{
+								"key": "dfd0dfc1-05bb-4f9b-8e65-675567309f9c",
+								"type": "tableHeader",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Magna."
+											}
+										}
+									]
+								}
+							},
+							{
+								"key": "efee1977-26ae-461c-bc02-30b133fa8b63",
+								"type": "tableHeader",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Reprehenderit velit."
+											}
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"key": "3881ef8e-1dd9-4383-95f5-3eba7127437a",
+						"type": "tableRow",
+						"content": [
+							{
+								"key": "8ab83651-143e-4e89-9e56-cf3b837f68a7",
+								"type": "tableCell",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Laborum anim dolor ullamco."
+											}
+										}
+									]
+								}
+							},
+							{
+								"key": "9b3cda4b-f983-4368-9b99-b59099c44fd5",
+								"type": "tableCell",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Nostrud ullamco ad dolor aute sunt."
+											}
+										}
+									]
+								}
+							}
+						]
+					}
+				]
+			},
+			"text": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading3",
+						"content": {
+							"text": "Coming"
+						}
+					}
+				]
+			},
+			"image": {
+				"__TYPE__": "ImageContent",
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1586952518485-11b180e92764",
+					"width": 4172,
+					"height": 4000
+				},
+				"url": "https://images.unsplash.com/photo-1586952518485-11b180e92764",
+				"width": 4172,
+				"height": 4000,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"alt": "coming",
+				"thumbnails": {}
+			}
+		},
+		"items": []
+	}
+]

@@ -1,0 +1,25 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"eyebrow": {
+				"__TYPE__": "FieldContent",
+				"value": "develop",
+				"type": "Text"
+			},
+			"text": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Fugiat enim nulla voluptate Lorem est tempor minim enim. Eiusmod ad sunt exercitation esse velit laborum in ullamco irure in excepteur nulla aliqua."
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]
